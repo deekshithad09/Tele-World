@@ -1,0 +1,87 @@
+<html lan="en">
+    <head>
+        <titlte>Electronics</titlte>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+      <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    </head>
+    <body class="hold-transition sidebar-mini">
+
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link"><img src="tv.jfif" width=50 height=50  alt="Tele World" class="brand-image img-circle elevation-3">
+        <span class="brand-text font-weight-light" style="color:White">Tele world</span></a>
+        
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+              
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                      <li class="nav-item">
+                        <a href="/adddata" class="nav-link">
+                          <i class="nav-icon far fa-circle text-info"></i>
+                          <p>Add Product</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/deletestock" class="nav-link">
+                          <i class="nav-icon far fa-circle text-info"></i>
+                          <p class="text">Delete product</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/stockupdate" class="nav-link">
+                          <i class="nav-icon far fa-circle text-info"></i>
+                          <p class="text">Update Stock</p>
+                        </a>
+                      </li>
+                      
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+            <div class="content-wrapper" >
+                
+                <div class="col-md-6">
+                    <div class="card card-info">
+                        <div class="card-header">
+                          <h3 class="card-title">Update Quality of product</h3>
+                        </div>
+                    </div>   
+        
+        <form action="/update" method="POST" class="form-horizontal">
+
+        <div class="card-body">
+
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Product ID : </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="pid" id="inputPassword3" placeholder="Enter Id">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">New Stock: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="stock" id="inputPassword3" placeholder="Enter quality">
+                </div>
+              </div>
+          
+        </div>
+
+        <div class="card-footer">
+            <button type="submit" id="update" class="btn btn-info">Update</button>
+            <button type="reset" class="btn btn-default float-right">Cancel</button>
+          </div>
+        </form>
+        <a href="/" class="nav-link">Home Page</a>
+        </div></div>
+    </body>
+</html>
